@@ -19,7 +19,7 @@ describe('trpc integration tests', () =>{
         expect(user?.name).toEqual('Robin Wieruch')
     })
 
-    test('query', async () =>{
+    test('mutate', async () =>{
         const user = await trpc.user.createUser.mutate({name: 'Jim'})
         expect(user.name).toEqual('Jim')
     })
