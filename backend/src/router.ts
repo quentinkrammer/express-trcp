@@ -29,7 +29,6 @@ export const userRouter = router({
       };
 
       users.push(user);
-      console.log('in router', JSON.stringify(user))
       return user;
     }),
 });

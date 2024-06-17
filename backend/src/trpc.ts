@@ -1,7 +1,7 @@
-import { inferAsyncReturnType, initTRPC } from '@trpc/server';
-import { createContext } from './context';
+import { initTRPC } from '@trpc/server';
+import { type Context } from './context';
 
-export type Context = inferAsyncReturnType<typeof createContext>;
+
 
 const t = initTRPC.context<Context>().create();
 
